@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Product - Nipedili Store</title>
+        <link rel="icon" href="image/nplogo.png">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    </head>
+
+
+    <body>
+
+        
+        <div class="container">
+
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="image/nplogo.png" width="170px"></a> 
+                </div>
+                <nav>
+                    <ul id="MenuIterms">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="image/cart.png" width="30px" height="30px"></a>
+                <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+         
+             </div>
+
+<!-------------------Account page----------------------------------->
+
+             <div class="account-page">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="image/image+.png" width="100%">
+                        </div>
+
+                        <div class="col-2">
+
+                            <div class="form-container">
+                                <div class="form-btn">
+                                    <span onclick="login()">Login</span>
+                                    <span onclick="register()">Register</span>
+                                    <hr id="Indicator">
+                                </div>
+
+                                <form id="LoginForm">
+                                    <input type="text" placeholder="Username">
+                                    <input type="Password" placeholder="Password">
+                                    <button type="submit" class="btn">Login</button>
+                                    <a href="">Forget Password</a>
+                                </form>
+
+                                <form id="RegisterForm">
+                                    <input type="text" placeholder="Username">
+                                    <input type="email" placeholder="Email">
+                                    <input type="Password" placeholder="Password">
+                                    <button type="submit" class="btn">Register</button>
+                                    
+                                </form>
+    
+                            </div>
+                           
+                        </div>
+
+                    </div>
+                  
+                </div>
+
+             </div>
+ 
+
+<!--------------------Footer------------------------------------------>
+
+     <div class="footer">
+         <div class="container">
+             <div class="row">
+                 <div class="footer-col-1">
+                     <h3>Download Our App</h3>
+                     <p>Download App for Android and ios mobile phone.</p>
+                     <div class="app-logo">
+                         <img src="image/play-store.png">
+                         <img src="image/app-store.png">
+                     </div>
+                 </div>
+                 <div class="footer-col-2">
+                    <img src="image/nplogo_white.png">
+                     <p>Our Purpose is to Provide Excellent Service to our Customers and 
+                         to Provide Excellent Product.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blogs Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://web.facebook.com/nipedilistore" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/nipedili_store" target="_blank">Instagram</a></li>
+                        <li><a href="https://twitter.com/Nipedili_Store" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+             </div>
+             <hr>
+             <p class="Copyright">Copyright 2022 - Nipedili Store</p>
+         </div>
+     </div>
+
+     <!----------Js for toggle Menu--------------------------->
+
+     <script>
+
+         var MenuIterms = document.getElementById("MenuIterms");
+         MenuIterms.style.maxHeight="0px";
+         function menutoggle(){
+             if(MenuIterms.style.maxHeight=="0px")
+             {
+                MenuIterms.style.maxHeight="200px";
+             }
+             else{
+                MenuIterms.style.maxHeight="0px";
+             }
+         }
+        
+     </script>
+
+      <!----------Js for toggle login/register Form--------------------------->
+
+      <script>
+
+        var LoginForm = document.getElementById("LoginForm");
+        var RegisterForm = document.getElementById("RegisterForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function register(){
+            RegisterForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)"; 
+            Indicator.style.transform = "translateX(100px)";
+        }
+
+        function login(){
+            RegisterForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+
+
+      </script>
+
+    </body>
+
+</html>

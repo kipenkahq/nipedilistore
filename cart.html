@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Product - Nipedili Store</title>
+        <link rel="icon" href="image/nplogo.png">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    </head>
+
+
+    <body>
+
+        
+        <div class="container">
+
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="image/nplogo.png" width="170px"></a> 
+                </div>
+                <nav>
+                    <ul id="MenuIterms">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                          
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="image/cart.png" width="30px" height="30px"></a>
+                <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+         
+             </div>
+
+<!-------------Cart iterms details----------------------------------->
+
+        <div class="small-container cart-page">
+
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="image/buy1.jpg">
+                            <div>
+                                <p>Manga Red T-shirt</p>
+                                <small>Price: Tzs 20,000/=</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>20,000/=</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="image/buy2.jpg">
+                            <div>
+                                <p>Converse Sneakers</p>
+                                <small>Price: Tzs 25,000/=</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>25,000/=</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="image/buy3.jpg">
+                            <div>
+                                <p>Smart Watch Dz09</p>
+                                <small>Price: Tzs 55,000/=</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>55,000/=</td>
+                </tr>
+
+
+
+            </table>
+
+            <div class="total-price">
+
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>Tzs 100,000/=</td>
+                    </tr>
+
+                    <tr>
+                        <td>Delivery</td>
+                        <td>Tzs 10,000/=</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tax</td>
+                        <td>Tzs 00.00/=</td>
+                    </tr>
+
+                    <tr>
+                        <td>Total</td>
+                        <td>Tzs 110,000/=</td>
+                    </tr>
+
+
+                </table>
+
+            </div>
+
+        </div>
+ 
+
+<!--------------------Footer------------------------------------------>
+
+     <div class="footer">
+         <div class="container">
+             <div class="row">
+                 <div class="footer-col-1">
+                     <h3>Download Our App</h3>
+                     <p>Download App for Android and ios mobile phone.</p>
+                     <div class="app-logo">
+                         <img src="image/play-store.png">
+                         <img src="image/app-store.png">
+                     </div>
+                 </div>
+                 <div class="footer-col-2">
+                    <img src="image/nplogo_white.png">
+                     <p>Our Purpose is to Provide Excellent Service to our Customers and 
+                         to Provide Excellent Product.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blogs Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://web.facebook.com/nipedilistore" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/nipedili_store" target="_blank">Instagram</a></li>
+                        <li><a href="https://twitter.com/Nipedili_Store" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+             </div>
+             <hr>
+             <p class="Copyright">Copyright 2022 - Nipedili Store</p>
+         </div>
+     </div>
+
+     <!----------Js for toggle Menu--------------------------->
+
+     <script>
+
+         var MenuIterms = document.getElementById("MenuIterms");
+         MenuIterms.style.maxHeight="0px";
+         function menutoggle(){
+             if(MenuIterms.style.maxHeight=="0px")
+             {
+                MenuIterms.style.maxHeight="200px";
+             }
+             else{
+                MenuIterms.style.maxHeight="0px";
+             }
+         }
+        
+     </script>
+
+    </body>
+
+</html>
